@@ -12,6 +12,8 @@
 		1AFCE81A1D5C5F6F00E41C60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFCE8181D5C5F6F00E41C60 /* Main.storyboard */; };
 		1AFCE81C1D5C5F6F00E41C60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AFCE81B1D5C5F6F00E41C60 /* Assets.xcassets */; };
 		1AFCE81F1D5C5F6F00E41C60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFCE81D1D5C5F6F00E41C60 /* LaunchScreen.storyboard */; };
+		1AFCE8291D5C647F00E41C60 /* 20.01-KJV.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1AFCE8281D5C647F00E41C60 /* 20.01-KJV.mp3 */; };
+		1AFCE82B1D5C64A300E41C60 /* herzForApp.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AFCE82A1D5C64A300E41C60 /* herzForApp.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		1AFCE81B1D5C5F6F00E41C60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AFCE81E1D5C5F6F00E41C60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AFCE8201D5C5F6F00E41C60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AFCE8281D5C647F00E41C60 /* 20.01-KJV.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "20.01-KJV.mp3"; sourceTree = "<group>"; };
+		1AFCE82A1D5C64A300E41C60 /* herzForApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = herzForApp.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +64,18 @@
 				1AFCE81B1D5C5F6F00E41C60 /* Assets.xcassets */,
 				1AFCE81D1D5C5F6F00E41C60 /* LaunchScreen.storyboard */,
 				1AFCE8201D5C5F6F00E41C60 /* Info.plist */,
+				1AFCE8261D5C63F800E41C60 /* Suooprting Files */,
 			);
 			path = wiesheitUhr;
+			sourceTree = "<group>";
+		};
+		1AFCE8261D5C63F800E41C60 /* Suooprting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AFCE82A1D5C64A300E41C60 /* herzForApp.png */,
+				1AFCE8281D5C647F00E41C60 /* 20.01-KJV.mp3 */,
+			);
+			name = "Suooprting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +136,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AFCE8291D5C647F00E41C60 /* 20.01-KJV.mp3 in Resources */,
 				1AFCE81F1D5C5F6F00E41C60 /* LaunchScreen.storyboard in Resources */,
 				1AFCE81C1D5C5F6F00E41C60 /* Assets.xcassets in Resources */,
 				1AFCE81A1D5C5F6F00E41C60 /* Main.storyboard in Resources */,
+				1AFCE82B1D5C64A300E41C60 /* herzForApp.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
