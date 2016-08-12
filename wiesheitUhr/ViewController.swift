@@ -17,9 +17,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-    let date: NSDate = dateTimePicker.date
-
-
+        let dateTime : NSDate = dateTimePicker.date
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,9 +26,27 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func alarmSetButtonTapped(sender: AnyObject) {
-        NSLog("Alarm Set Button Tapped");
+    func scheduleLocalNotification(fireDate: NSDate){
+       let notification = UILocalNotification()
+       notification.fireDate = NSDate()
+       notification.alertBody = "Time to wake up!"
+       notification.soundName = "20.01-KJV.caf"
+       UIApplication.sharedApplication().scheduleLocalNotification(notification)
         
+        
+    }
+    
+    @IBAction func alarmSetButtonTapped(sender: AnyObject) {
+        
+        let dateFormatter = NSDateFormatter()
+        
+        dateFormatter.timeZone = NSTimeZone.localTimeZone()
+        dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
+        dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
+        
+        let dateTimeString = dateFormatter.stringFromDate(dateTimePicker.date)
+        
+        NSLog("Alarm Set Button Tapped",dateTimeString)
     }
     
     @IBAction func alarmCancelButtonTapped(sender: AnyObject) {
@@ -37,5 +54,6 @@ class ViewController: UIViewController {
     }
     
 
+    
 }
 
