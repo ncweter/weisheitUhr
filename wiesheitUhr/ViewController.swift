@@ -10,14 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
     
+  
     
     @IBOutlet weak var dateTimePicker: UIDatePicker!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
         let dateTime : NSDate = dateTimePicker.date
+        
         
     }
 
@@ -26,15 +27,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func scheduleLocalNotification(fireDate: NSDate){
+    func scheduleLocalNotificationWithDate(fireDate: NSDate){
+        print("We got int!")
        let notification = UILocalNotification()
-       notification.fireDate = NSDate()
+       notification.fireDate = fireDate
        notification.alertBody = "Time to wake up!"
-       notification.soundName = "20.01-KJV.caf"
+        
+        //print(notification.alertBody)
+        
+       notification.soundName = "sfx_goal.caf"
        UIApplication.sharedApplication().scheduleLocalNotification(notification)
-        
-        
     }
+    
     
     @IBAction func alarmSetButtonTapped(sender: AnyObject) {
         
@@ -46,7 +50,9 @@ class ViewController: UIViewController {
         
         let dateTimeString = dateFormatter.stringFromDate(dateTimePicker.date)
         
-        NSLog("Alarm Set Button Tapped",dateTimeString)
+        NSLog("Alarm Set Button Tapped \(dateTimeString)")
+        
+        self.scheduleLocalNotificationWithDate(dateTimePicker.date)
     }
     
     @IBAction func alarmCancelButtonTapped(sender: AnyObject) {

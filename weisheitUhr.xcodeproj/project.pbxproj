@@ -13,6 +13,10 @@
 		1AFCE81C1D5C5F6F00E41C60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AFCE81B1D5C5F6F00E41C60 /* Assets.xcassets */; };
 		1AFCE81F1D5C5F6F00E41C60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFCE81D1D5C5F6F00E41C60 /* LaunchScreen.storyboard */; };
 		1AFCE82B1D5C64A300E41C60 /* herzForApp.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AFCE82A1D5C64A300E41C60 /* herzForApp.png */; };
+		1AFCE82E1D5DBBEC00E41C60 /* 20.02-KJV.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1AFCE82D1D5DBBEC00E41C60 /* 20.02-KJV.mp3 */; };
+		1AFCE8321D5DC05900E41C60 /* sfx_flap.caf in Resources */ = {isa = PBXBuildFile; fileRef = 1AFCE8301D5DC05900E41C60 /* sfx_flap.caf */; };
+		1AFCE8331D5DC05900E41C60 /* sfx_goal.caf in Resources */ = {isa = PBXBuildFile; fileRef = 1AFCE8311D5DC05900E41C60 /* sfx_goal.caf */; };
+		1AFCE8341D5DC85A00E41C60 /* 20.01-KJV.caf in Resources */ = {isa = PBXBuildFile; fileRef = 1AFCE82C1D5C6BEF00E41C60 /* 20.01-KJV.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,9 @@
 		1AFCE8201D5C5F6F00E41C60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AFCE82A1D5C64A300E41C60 /* herzForApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = herzForApp.png; sourceTree = "<group>"; };
 		1AFCE82C1D5C6BEF00E41C60 /* 20.01-KJV.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "20.01-KJV.caf"; sourceTree = "<group>"; };
+		1AFCE82D1D5DBBEC00E41C60 /* 20.02-KJV.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "20.02-KJV.mp3"; sourceTree = "<group>"; };
+		1AFCE8301D5DC05900E41C60 /* sfx_flap.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sfx_flap.caf; sourceTree = "<group>"; };
+		1AFCE8311D5DC05900E41C60 /* sfx_goal.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sfx_goal.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +69,8 @@
 				1AFCE8181D5C5F6F00E41C60 /* Main.storyboard */,
 				1AFCE81B1D5C5F6F00E41C60 /* Assets.xcassets */,
 				1AFCE81D1D5C5F6F00E41C60 /* LaunchScreen.storyboard */,
+				1AFCE82C1D5C6BEF00E41C60 /* 20.01-KJV.caf */,
+				1AFCE82F1D5DC05800E41C60 /* SFX */,
 				1AFCE8261D5C63F800E41C60 /* Suooprting Files */,
 			);
 			name = weisheitUhr;
@@ -72,10 +81,19 @@
 			isa = PBXGroup;
 			children = (
 				1AFCE8201D5C5F6F00E41C60 /* Info.plist */,
-				1AFCE82C1D5C6BEF00E41C60 /* 20.01-KJV.caf */,
+				1AFCE82D1D5DBBEC00E41C60 /* 20.02-KJV.mp3 */,
 				1AFCE82A1D5C64A300E41C60 /* herzForApp.png */,
 			);
 			name = "Suooprting Files";
+			sourceTree = "<group>";
+		};
+		1AFCE82F1D5DC05800E41C60 /* SFX */ = {
+			isa = PBXGroup;
+			children = (
+				1AFCE8301D5DC05900E41C60 /* sfx_flap.caf */,
+				1AFCE8311D5DC05900E41C60 /* sfx_goal.caf */,
+			);
+			path = SFX;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +156,12 @@
 			files = (
 				1AFCE81F1D5C5F6F00E41C60 /* LaunchScreen.storyboard in Resources */,
 				1AFCE81C1D5C5F6F00E41C60 /* Assets.xcassets in Resources */,
+				1AFCE82E1D5DBBEC00E41C60 /* 20.02-KJV.mp3 in Resources */,
+				1AFCE8331D5DC05900E41C60 /* sfx_goal.caf in Resources */,
 				1AFCE81A1D5C5F6F00E41C60 /* Main.storyboard in Resources */,
 				1AFCE82B1D5C64A300E41C60 /* herzForApp.png in Resources */,
+				1AFCE8341D5DC85A00E41C60 /* 20.01-KJV.caf in Resources */,
+				1AFCE8321D5DC05900E41C60 /* sfx_flap.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +323,7 @@
 				1AFCE8251D5C5F6F00E41C60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
