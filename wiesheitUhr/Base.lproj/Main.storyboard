@@ -29,6 +29,9 @@
                                 <state key="normal" title="Set Alarm">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="alarmSetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZaN-d4-Gyx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPE-Af-CdI">
                                 <rect key="frame" x="13" y="285" width="289" height="30"/>
@@ -36,10 +39,16 @@
                                 <state key="normal" title="Cancel Alarm">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="alarmCancelButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dSb-fE-Gyz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="dateTimePicker" destination="j6j-2F-l0D" id="gRL-tE-wJS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
